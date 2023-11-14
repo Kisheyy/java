@@ -1,0 +1,44 @@
+public class Student {
+    // Data Members (Attributes)
+    private int studentID;        // Unique student ID
+    private String name;          // Student's name
+    private String email;         // Student's email address
+    private String phoneNumber;   // Student's phone number
+    private int age;              // Student's age
+    private String department;    // Student's department/major
+    private double gpa;           // Grade Point Average
+
+    // Constructor
+    public Student(int studentID, String name, String email, String phoneNumber, int age, String department, double gpa) {
+        this.studentID = studentID;
+        this.name = name;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.age = age;
+        this.department = department;
+        this.gpa = gpa;
+    }
+
+    // Methods (Behavior)
+    public void enrollInCourse(String courseName) {
+        // Logic to enroll the student in a course
+        System.out.println(name + " has enrolled in the course: " + courseName);
+    }
+
+    public void submitAssignment(String assignmentName) {
+        // Logic to submit an assignment
+        System.out.println(name + " has submitted the assignment: " + assignmentName);
+    }
+
+    public void displayStudentInfo() {
+        // Display student information
+        System.out.println("Student ID: " + studentID);
+        System.out.println("Name: " + name);
+        System.out.println("Email: " + email);
+        System.out.println("Phone Number: " + phoneNumber);
+        System.out.println("Age: " + age);
+        System.out.println("Department: " + department);
+        System.out.println("GPA: " + gpa);
+    }
+
+    // Other methods for behavior related to a student's activities
