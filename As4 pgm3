@@ -1,0 +1,32 @@
+import java.util.HashSet;
+import java.util.Set;
+
+public class SetIntersectionUnion {
+    public static void main(String[] args) {
+        Set<Integer> set1 = new HashSet<>();
+        Set<Integer> set2 = new HashSet<>();
+
+        // Populate the first set
+        set1.add(1);
+        set1.add(2);
+        set1.add(3);
+        set1.add(4);
+
+        // Populate the second set
+        set2.add(3);
+        set2.add(4);
+        set2.add(5);
+        set2.add(6);
+
+        // Intersection of sets
+        Set<Integer> intersection = new HashSet<>(set1);
+        intersection.retainAll(set2);
+
+        System.out.println("Intersection: " + intersection);
+
+        // Union of sets
+        Set<Integer> union = new HashSet<>(set1);
+        union.addAll(set2);
+
+        System.out.println("Union: " + union);
+    }
