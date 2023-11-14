@@ -1,0 +1,12 @@
+public class VariableConditions {
+    public static void main(String[] args) {
+        int a = 12;
+        int b = 45;
+
+        if (a < 10 && a < b) {
+            System.out.println("Both conditions are true.");
+        } else {
+            System.out.println("At least one condition is false.");
+        }
+    }
+}
