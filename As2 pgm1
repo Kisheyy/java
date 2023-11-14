@@ -1,0 +1,16 @@
+public class GradeCalculation {
+    public static void main(String[] args) {
+        int totalStudents = 90;
+        int totalBoys = 45;
+        double gradeAPercentage = 50; // 50% of total students secured grade 'A'
+        int boysWithGradeA = 20;
+
+        // Calculate the total number of students who secured grade 'A'
+        double totalGradeA = (gradeAPercentage / 100) * totalStudents;
+
+        // Calculate the total number of girls who secured grade 'A'
+        int totalGirlsWithGradeA = (int) (totalGradeA - boysWithGradeA);
+
+        System.out.println("Total number of girls getting grade 'A': " + totalGirlsWithGradeA);
+    }
+}
