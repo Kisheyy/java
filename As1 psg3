@@ -1,0 +1,31 @@
+USING A THIRD VARIABLE
+public class SwapWithThirdVariable {
+    public static void main(String[] args) {
+        int a = 4;
+        int b = 9;
+        int temp;
+
+        System.out.println("Before swapping: a = " + a + ", b = " + b);
+
+        temp = a;
+        a = b;
+        b = temp;
+
+        System.out.println("After swapping: a = " + a + ", b = " + b);
+    }
+}
+
+WITHOUT USING A THIRD VARIABLE
+public class SwapWithoutThirdVariable {
+    public static void main(String[] args) {
+        int a = 4;
+        int b = 9;
+
+        System.out.println("Before swapping: a = " + a + ", b = " + b);
+
+        a = a + b;
+        b = a - b;
+        a = a - b;
+
+        System.out.println("After swapping: a = " + a + ", b = " + b);
+    }
