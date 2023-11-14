@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class ReverseThreeDigitNumber {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a 3-digit number: ");
+        int number = scanner.nextInt();
+
+        if (number >= 100 && number <= 999) {
+            int digit1 = number % 10;        // Extract the last digit
+            int digit2 = (number / 10) % 10; // Extract the middle digit
+            int digit3 = number / 100;       // Extract the first digit
+
+            int reversedNumber = digit1 * 100 + digit2 * 10 + digit3;
+            System.out.println("Reversed Number: " + reversedNumber);
+        } else {
+            System.out.println("Please enter a valid 3-digit number.");
+        }
+    }
+}
